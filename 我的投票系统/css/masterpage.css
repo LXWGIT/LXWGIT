@@ -1,0 +1,163 @@
+﻿*
+{
+    padding:0;
+    margin:0;
+    font-size: small;
+}
+body 
+{
+    margin:0 auto;
+    width:1024px;
+}
+#head1
+{
+    width:1024px;
+    text-align:center;
+    
+    
+    }
+ #head1 ul li
+ {
+     background:black;
+     color:White;
+     padding-top:10px;
+     list-style-type:none;
+     }
+ #head1 ul #shoucang
+ {     
+     height:25px;       
+     }
+  
+#head1 ul li a
+{
+    color:White;
+    font-size:13px;
+    }
+#neirong1
+{ 
+    width:220px;
+    float:left;
+    }
+#neirong1 ul li
+{
+    list-style-type:none;
+    }
+#neirong2
+{
+    width:804px;
+    float:left ;
+    height:595px;
+    
+    }
+#neirong2 #head h1
+{
+    font-size:13px;
+    line-height:20px;
+    }
+#neirong2 #gridview ul li
+{
+    list-style-type:none;
+     
+    }
+#neirong2 #gridview 
+{
+   text-align:center ;
+  
+    }
+#neirong2 #index
+{
+    height:30px;
+    padding-top:10px;
+    }
+ #neirong2 #addhead h1
+ {
+     height:20px;
+     padding-top:15px;
+     }
+ #neirong2 #addtable span
+ {
+     color:Red ;
+     }
+ #neirong2 #typehead h1
+ {
+     height:20px;
+     padding-top:10px;
+     }
+ #neirong2 #subjecthead h1
+ {
+     height:20px;
+     padding-top:10px;
+     }
+  #neirong2 #subjectkong 
+ {
+     height:20px;
+     background:gray;
+     }
+ #neirong2 #typegridview
+ {
+     text-align:center;
+     
+     }
+ #neirong2 #typeitem
+ {
+     background:#e9e7e3;
+     }
+  #neirong2 #typeitem1
+ {
+     background:#e9e7e3;
+     }
+  #neirong2 #typeitem2
+ {
+     background:#e9e7e3;
+     }
+ #neirong2 #itemhead h1
+ {
+     height:20px;
+     padding-top:10px;
+     background:gray;
+     }
+ #neirong2 #item1
+ {
+     background:#e9e7e3;
+     padding-top:10px;
+     }
+ #neirong2 #item2
+ {
+     background:#e9e7e3;
+      padding-top:10px;
+     }
+ #neirong2 #item3
+ {
+     background:#e9e7e3;
+      padding-top:10px;
+ }
+ #neirong2 #item4
+ {
+     background:#e9e7e3;
+      padding-top:10px;
+     }
+ #neirong2 #head123 h1
+ {
+     height:20px;
+     padding-top:10px;
+     }
+ #neirong2 #subjectgridview
+ {
+     text-align:center;
+     }
+ #neirong2 #item5
+ {
+      text-align:center;
+     }
+#footer
+{
+    clear:both;
+    background:black;
+    color:White;
+    text-align:center;
+    height:20px;
+    }
+#footer a
+{
+    color:White;
+    }
