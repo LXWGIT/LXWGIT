@@ -1,0 +1,88 @@
+﻿#indexnavy2 ul li
+{
+    list-style-type:none;
+    border:1px solid #c2e1f5 
+    }
+#indexnavy2 h1
+{
+    padding-top:10px;
+    font-size:20px;
+    height:40px;
+    background-image:url("../localimages/旅游局诚信系统.jpg");
+    }
+#indexnavy2 ul.u
+{
+    height:50px;
+    }
+#indexnavy2 ul.u li
+{
+   margin-left:20px;
+   margin-top:18px;
+  
+    }
+#indexnavy2 ul.u1
+{
+    height:50px;
+    }
+#indexnavy2 ul.u1 li
+{  
+   margin-left:20px;
+   margin-top:10px;
+  display:inline;
+    }
+#indexnavy2 ul.u3 li
+{
+    margin-left:20px;
+    margin-top:13px;
+    
+    }
+#indexnavy2 ul.u3
+{
+    height:50px;
+   
+    }
+ #indexnavy2 ul.u4
+ {
+     height:50px;
+     }
+#indexnavy2 ul.u4 li
+{
+    font-size:13px;
+    text-align:center;
+    margin-top:13px;
+    }
+#indexnavy2 ul.u5 li
+{
+    height:40px; 
+    padding-top:10px;
+    }
+#indexnavy2 ul.u5 li.l
+{
+    height:100px;
+    }
+#indexnavy2 ul.u5 li.l1
+{
+    height:80px;
+    }
+#indexnavy2 ul.u6 li
+{
+    height:40px;
+    padding-top:10px;
+    }
+#indexnavy2 ul.u6 li.l
+{
+    height:100px;
+    }
+#indexnavy2 ul.u7 li
+{
+    height:40px;
+    padding-top:10px;
+    }
+#indexnavy2 ul.u7 li.l
+{
+    height:100px;
+    }
+#indexnavy2 ul.u7 li.l1
+{
+    height:100px;
+    }

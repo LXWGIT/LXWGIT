@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageindex.master.cs" Inherits="Master_MasterPageindex" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../lxwmanage/style/index.css" rel="stylesheet" type="text/css" />
+    <link href="../lxwmanage/style/manage-jingqu.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="indexhead">
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" data="../lxwmanage/flash/flash632.swf" type="application/x-shockwave-flash" width="472px" height="200px">
+      <param name="movie" value ="../lxwmanage/flash/flash632.swf" />         
+    </object>     
+    </div>
+    <div id="indexhead1">
+       
+    </div>
+    <div id="indexnavy">
+      <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+      <ContentTemplate>
+        <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" 
+            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Small" 
+            ForeColor="#666666" Height="20px" Orientation="Horizontal" 
+            StaticSubMenuIndent="10px">
+            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#E3EAEB" />
+            <DynamicSelectedStyle BackColor="#1C5E55" />
+            <Items>
+                <asp:MenuItem Text="商家信息管理" Value="商家信息管理">
+                    <asp:MenuItem Text="景区管理" Value="景区管理"></asp:MenuItem>
+                    <asp:MenuItem Text="旅行社管理" Value="旅行社管理"></asp:MenuItem>
+                    <asp:MenuItem Text="餐饮酒店管理" Value="餐饮酒店管理"></asp:MenuItem>
+                    <asp:MenuItem Text="交通车辆管理" Value="交通车辆管理"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="自费娱乐项目管理" Value="自费娱乐项目管理"></asp:MenuItem>
+                <asp:MenuItem Text="导游管理" Value="导游管理"></asp:MenuItem>
+                <asp:MenuItem Text="行程管理" Value="行程管理"></asp:MenuItem>
+                <asp:MenuItem Text="团队管理" Value="团队管理"></asp:MenuItem>
+                <asp:MenuItem Text="用户信息管理" Value="用户信息管理">
+                    <asp:MenuItem Text="权限管理" Value="权限管理"></asp:MenuItem>
+                    <asp:MenuItem Text="个人账户管理" Value="个人账户管理"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="公告发布" Value="公告发布"></asp:MenuItem>
+                <asp:MenuItem Text="行程查询" Value="行程查询"></asp:MenuItem>
+                <asp:MenuItem Text="注销" Value="注销"></asp:MenuItem>
+                <asp:MenuItem Text="安全退出" Value="安全退出"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#1C5E55" />
+        </asp:Menu>
+        </ContentTemplate> 
+      </asp:UpdatePanel>    
+    </div>
+   <div id="indexnavy3">
+    
+       <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">
+           <ContentTemplate>            
+               <asp:Label ID="Label4" runat="server" Text="用户：" Font-Size="Small" ></asp:Label>
+               <asp:Label ID="Label3" runat="server" Text="Label" Font-Size="Small" 
+                   ForeColor="#0066FF"></asp:Label>
+               <asp:Label ID="Label1" runat="server" Text="时间：" Font-Size="Small" 
+                   ></asp:Label>
+               <asp:Label ID="Label2" runat="server" Text="Label" Font-Size="Small" 
+                   ForeColor="#0066FF"></asp:Label>
+                    <asp:Timer ID="Timer1" runat="server" Interval="1000" ontick="Timer1_Tick">
+               </asp:Timer>
+           </ContentTemplate>
+           <Triggers>
+               <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+           </Triggers>
+       </asp:UpdatePanel>
+    
+    </div>
+   <div id="indexnavy1">
+    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+      <ContentTemplate>
+      <ul>
+        <li>
+            <asp:ImageButton ID="ImageButton1" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/景区管理.jpg" />
+        </li>
+        <li>
+            <asp:ImageButton ID="ImageButton2" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/旅行社管理.jpg" />
+          </li>
+        <li>
+            <asp:ImageButton ID="ImageButton3" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/餐饮酒店管理.jpg" />
+          </li>
+        <li>
+            <asp:ImageButton ID="ImageButton4" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/交通车辆管理.jpg" />
+          </li>
+        <li>
+            <asp:ImageButton ID="ImageButton5" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/个人账户管理.jpg" />
+          </li>
+        <li>
+            <asp:ImageButton ID="ImageButton6" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/导游管理.jpg" />
+          </li>
+        <li>
+            <asp:ImageButton ID="ImageButton7" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/团队管理.jpg" />
+          </li>
+        <li>
+            <asp:ImageButton ID="ImageButton8" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/行程管理.jpg" />
+          </li>
+      </ul>
+      </ContentTemplate> 
+     </asp:UpdatePanel> 
+    </div>
+   
+    <div id="indexnavy2">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="indexfooter">
+      
+    </div>
+    <div id="indexfooter1">
+      福建省旅游公司copy right@版权所有 翻版必究<br /><br /> 
+      客服投诉热线：86-10-58511234     客服邮箱:kf@vip.sohu.com     
+
+    </div>
+    </form>
+</body>
+</html>

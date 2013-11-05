@@ -1,0 +1,80 @@
+﻿*
+{
+    margin:0;
+    padding:0;
+   
+  
+}
+body 
+{
+   margin :0 auto;
+   width:1024px;
+  
+}
+#indexhead
+{   
+    height:200px;
+    width:473px;
+    float :left ;
+    }
+#indexhead1
+{
+    width:550px;
+    height:200px;
+    float:left ;
+    background-image:url("../localimages/head1.jpg");
+    text-align:right;
+    color:Blue;
+    }
+
+#indexnavy
+{
+    height:25px;
+    width:740px;
+    float :left;
+   
+    }
+ #indexnavy3
+ {
+     width:284px;
+     float :left;
+     height:25px;
+     text-align:center;
+     }
+#indexnavy1 ul li
+{
+    list-style-type:none ;
+    height:55px;
+    padding-top:20px;
+    border:1px solid gray;
+    
+    }
+#indexnavy1
+{
+    width:200px;
+    float:left ;
+   
+    }
+ 
+#indexnavy2
+{
+    width:820px;
+    float:left;
+  　
+    }
+#indexfooter
+{
+    height:100px;
+    background:url("../localimages/footer1.jpg");
+    clear:both;
+    }
+#indexfooter1
+{
+    height:50px;
+    clear:both;
+    text-align:center;
+    font-size:15px;
+    padding-top:10px;
+    background-color:#a5d1f4;
+    font-weight:bold;
+    }
