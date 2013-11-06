@@ -20,4 +20,8 @@ public partial class Master_MasterPageindex : System.Web.UI.MasterPage
     {
         this.Label2.Text = System.DateTime.Now.ToString();
     }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("manage-jingqu.aspx");
+    }
 }

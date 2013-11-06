@@ -14,17 +14,9 @@ body
 #indexhead
 {   
     height:200px;
-    width:473px;
+    width:1024px;
     float :left ;
-    }
-#indexhead1
-{
-    width:550px;
-    height:200px;
-    float:left ;
-    background-image:url("../localimages/head1.jpg");
-    text-align:right;
-    color:Blue;
+   
     }
 
 #indexnavy
@@ -49,6 +41,14 @@ body
     border:1px solid gray;
     
     }
+#indexnavy1 ul li:hover
+{
+    filter:alpha(opacity=80);
+    }
+#indexnavy1 ul li a:hover
+{
+    color:Red ;
+    }
 #indexnavy1
 {
     width:200px;
@@ -70,11 +70,16 @@ body
     }
 #indexfooter1
 {
-    height:50px;
+    height:80px;
+    width:1000px;
     clear:both;
     text-align:center;
     font-size:15px;
-    padding-top:10px;
-    background-color:#a5d1f4;
+    margin-top:10px;
+    margin-left:10px;
+    background:url("../localimages/footer.png");
     font-weight:bold;
+    position:absolute;
+    padding-top:20px;
+   
     }

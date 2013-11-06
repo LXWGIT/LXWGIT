@@ -2,6 +2,26 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+    <div class="indexhead2">
+  <div class="indexhead1">
+    <ul>
+     <li>
+       <img alt="" src="../lxwmanage/localimages/交通车辆.jpg" />
+     </li>
+     <li>
+       <img alt="" src="../lxwmanage/localimages/景区.jpg" />
+     </li>
+     <li >
+       <img alt="" src="../lxwmanage/localimages/旅行社.jpg" />
+     </li>
+     <li>
+       <img alt="" src="../lxwmanage/localimages/酒店.jpg" />
+    </li>
+   </ul>
+  </div>
+</div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>>>景区信息</h1>
 <ul class="u5">

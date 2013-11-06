@@ -1,0 +1,34 @@
+﻿#indexhead .indexhead2
+{
+   background:url("../localimages/head3.jpg");
+   height:200px;
+    }
+#indexhead .indexhead1
+{ 
+    height:170px;
+    width:980px;
+    margin-top:17px;
+    margin-left:20px;
+    background:url("../localimages/图层.png");
+    position:absolute;
+}
+ #indexhead .indexhead2 .indexhead1 ul
+ {
+    height:170px;
+     }
+ #indexhead .indexhead2 .indexhead1 ul li img:hover
+ {
+     filter:Alpha(opacity=80);
+     }
+#indexhead  .indexhead2 .indexhead1 ul li
+{
+    list-style-type:none;
+    height:130px;
+    width:200px;
+    float:left;
+    margin-left:35px;
+    margin-top:20px; 
+    }
+
+
+

@@ -6,6 +6,7 @@
 <head runat="server">
     <link href="../lxwmanage/style/index.css" rel="stylesheet" type="text/css" />
     <link href="../lxwmanage/style/manage-jingqu.css" rel="stylesheet" type="text/css" />
+    <link href="../lxwmanage/style/indexhead.css" rel="stylesheet" type="text/css" />
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -14,17 +15,12 @@
     <form id="form1" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
-    <div id="indexhead">
-      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" data="../lxwmanage/flash/flash632.swf" type="application/x-shockwave-flash" width="472px" height="200px">
-      <param name="movie" value ="../lxwmanage/flash/flash632.swf" />         
-    </object>     
-    </div>
-    <div id="indexhead1">
-       
+    <div id="indexhead"> 
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>    
     </div>
     <div id="indexnavy">
-      <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-      <ContentTemplate>
+       
         <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" 
             DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Small" 
             ForeColor="#666666" Height="20px" Orientation="Horizontal" 
@@ -35,12 +31,16 @@
             <DynamicSelectedStyle BackColor="#1C5E55" />
             <Items>
                 <asp:MenuItem Text="商家信息管理" Value="商家信息管理">
-                    <asp:MenuItem Text="景区管理" Value="景区管理"></asp:MenuItem>
-                    <asp:MenuItem Text="旅行社管理" Value="旅行社管理"></asp:MenuItem>
-                    <asp:MenuItem Text="餐饮酒店管理" Value="餐饮酒店管理"></asp:MenuItem>
+                    <asp:MenuItem Text="景区管理" Value="景区管理" 
+                        NavigateUrl="~/lxwmanage/manage-jingqu.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="旅行社管理" Value="旅行社管理" 
+                        NavigateUrl="~/lxwmanage/manage-lvxingshe.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="餐饮酒店管理" Value="餐饮酒店管理" 
+                        NavigateUrl="~/lxwmanage/manage-canyingjiudian.aspx"></asp:MenuItem>
                     <asp:MenuItem Text="交通车辆管理" Value="交通车辆管理"></asp:MenuItem>
                 </asp:MenuItem>
-                <asp:MenuItem Text="自费娱乐项目管理" Value="自费娱乐项目管理"></asp:MenuItem>
+                <asp:MenuItem Text="自费娱乐项目管理" Value="自费娱乐项目管理" 
+                    NavigateUrl="~/lxwmanage/addorupdatelvxingshe.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="导游管理" Value="导游管理"></asp:MenuItem>
                 <asp:MenuItem Text="行程管理" Value="行程管理"></asp:MenuItem>
                 <asp:MenuItem Text="团队管理" Value="团队管理"></asp:MenuItem>
@@ -57,8 +57,7 @@
             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
             <StaticSelectedStyle BackColor="#1C5E55" />
         </asp:Menu>
-        </ContentTemplate> 
-      </asp:UpdatePanel>    
+       
     </div>
    <div id="indexnavy3">
     
@@ -80,59 +79,66 @@
        </asp:UpdatePanel>
     
     </div>
-   <div id="indexnavy1">
-    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-      <ContentTemplate>
+   <div id="indexnavy1">  
       <ul>
         <li>
-            <asp:ImageButton ID="ImageButton1" runat="server" 
-                ImageUrl="~/lxwmanage/localimages/景区管理.jpg" />
-        </li>
+       
+            <asp:ImageButton ID="ImageButton9" runat="server" 
+                ImageUrl="~/lxwmanage/localimages/景区管理.jpg"/>
+       
+         </li>
         <li>
+       
             <asp:ImageButton ID="ImageButton2" runat="server" 
                 ImageUrl="~/lxwmanage/localimages/旅行社管理.jpg" />
+     
           </li>
         <li>
+      
             <asp:ImageButton ID="ImageButton3" runat="server" 
                 ImageUrl="~/lxwmanage/localimages/餐饮酒店管理.jpg" />
           </li>
         <li>
+        
             <asp:ImageButton ID="ImageButton4" runat="server" 
                 ImageUrl="~/lxwmanage/localimages/交通车辆管理.jpg" />
           </li>
         <li>
+      
             <asp:ImageButton ID="ImageButton5" runat="server" 
                 ImageUrl="~/lxwmanage/localimages/个人账户管理.jpg" />
           </li>
         <li>
+        <a>
             <asp:ImageButton ID="ImageButton6" runat="server" 
-                ImageUrl="~/lxwmanage/localimages/导游管理.jpg" />
+                ImageUrl="~/lxwmanage/localimages/导游管理.jpg" /></a>
           </li>
         <li>
+     
             <asp:ImageButton ID="ImageButton7" runat="server" 
                 ImageUrl="~/lxwmanage/localimages/团队管理.jpg" />
           </li>
         <li>
+      
             <asp:ImageButton ID="ImageButton8" runat="server" 
                 ImageUrl="~/lxwmanage/localimages/行程管理.jpg" />
           </li>
       </ul>
-      </ContentTemplate> 
-     </asp:UpdatePanel> 
+     
     </div>
-   
-    <div id="indexnavy2">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+    <div id="indexnavy2">     
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          
+      </asp:ContentPlaceHolder>
+       
     </div>
     <div id="indexfooter">
-      
+     <div id="indexfooter1">
+       福建省旅游公司copy right@版权所有 翻版必究<br /><br /> 
+      客服投诉热线：86-10-58511234     客服邮箱:kf@vip.sohu.com  
+      </div>  
     </div>
-    <div id="indexfooter1">
-      福建省旅游公司copy right@版权所有 翻版必究<br /><br /> 
-      客服投诉热线：86-10-58511234     客服邮箱:kf@vip.sohu.com     
-
-    </div>
+    
     </form>
 </body>
 </html>
